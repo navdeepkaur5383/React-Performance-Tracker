@@ -11,3 +11,78 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.styled-table {
+  width: 50%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 8px;
+  text-align: left;
+  text-align: center;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.styled-table tr:hover {
+  background-color: #ddd;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of form elements */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  flex: 1; /* Equal width for each form group */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-control {
+  width: calc(100% - 20px); /* Adjust width to accommodate padding */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-submit {
+  flex: 1; /* Make button take up remaining space */
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; /* Add margin to separate button from input */
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
